@@ -72,7 +72,7 @@ adjuster = FontAdjuster("ETBook W")
 adjuster.adjust(
     "source/ETBembo-DisplayItalic.otf",
     "fonts/ETBookW-DisplayItalic.otf",
-    "kerning-italic.tea",
+    "kerning-italic.fea",
 )
 adjuster.adjust("source/ETBembo-RomanLF.otf", "fonts/ETBookW-RomanLF.otf")
 adjuster.adjust("source/ETBembo-RomanOSF.otf", "fonts/ETBookW-RomanOSF.otf")
