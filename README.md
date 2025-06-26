@@ -1,6 +1,6 @@
 # ETBook W
 
-This is a slightly modified version of [ET Book](https://github.com/edwardtufte/et-book/) (formerly known as ETBembo) created by Edward Tufte.
+This is a slightly modified version of [ET Book](https://github.com/edwardtufte/et-book/) (formerly known as ETBembo) originally designed by Dmitry Krasny, Bonnie Scranton, and Edward Tufte.
 
 This version adjusts some kerning issues, originally of "W" - hence the "W" in the name.
 
