@@ -1,0 +1,19 @@
+feature kern {
+    pos W o -225;
+    pos W a -225;
+	pos W e -225;
+	pos W y -100;
+	pos W A -225;
+	pos W O -150;
+	pos A V -225;
+	pos A v -150;
+	pos A Y -280;
+	pos V A -225;
+	pos V a -225;
+	pos V o -225;
+	pos Y a -160;
+	pos Y o -160;
+	pos Y e -160;
+	pos Y A -50;
+	pos O W -70;
+} kern;
