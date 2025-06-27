@@ -20,7 +20,8 @@ class FontAdjuster:
         if style_name is None:
             raise ValueError("Style name not found in the font.")
 
-        addOpenTypeFeatures(font, fea_file)
+        addOpenTypeFeatures(font, fea_file, ["GPOS"])
+
         for record in font["name"].names:
             if record.nameID == 1:
                 record.string = self.family_name.encode("utf-16be")
@@ -42,14 +43,14 @@ class ImageRenderer:
         self.text_color = "black"
         self.text = "Wolverine Watermelon Yellow Avocado"
         self.width = 1050
-        self.height = 980
+        self.height = 730
 
         self.output_image_path = output_image_path
         self.image = Image.new("RGB", (self.width, self.height), self.background_color)
         self.draw = ImageDraw.Draw(self.image)
         self.x = 20
         self.y = 20
-        self.label_font = ImageFont.truetype("fonts/ETBookW-SemiBoldOSF.otf", 13)
+        self.label_font = ImageFont.truetype("fonts/ETBookW-Bold.otf", 13)
 
     def put_text(self, font_path: str, label: str) -> None:
         self.draw.text(
@@ -70,29 +71,24 @@ class ImageRenderer:
 
 adjuster = FontAdjuster("ETBook W")
 adjuster.adjust(
-    "source/ETBembo-DisplayItalic.otf",
-    "fonts/ETBookW-DisplayItalic.otf",
+    "source/ETBookOT-Italic.otf",
+    "fonts/ETBookW-Italic.otf",
     "kerning-italic.fea",
 )
-adjuster.adjust("source/ETBembo-RomanLF.otf", "fonts/ETBookW-RomanLF.otf")
-adjuster.adjust("source/ETBembo-RomanOSF.otf", "fonts/ETBookW-RomanOSF.otf")
-adjuster.adjust("source/ETBembo-SemiBoldOSF.otf", "fonts/ETBookW-SemiBoldOSF.otf")
+adjuster.adjust("source/ETBookOT-Roman.otf", "fonts/ETBookW-Roman.otf")
+adjuster.adjust("source/ETBookOT-Bold.otf", "fonts/ETBookW-Bold.otf")
 
 renderer = ImageRenderer("example.png")
 
-renderer.put_text("source/ETBembo-RomanOSF.otf", "Original RomanOSF")
-renderer.put_text("fonts/ETBookW-RomanOSF.otf", "Modified RomanOSF")
+renderer.put_text("source/ETBookOT-Roman.otf", "Original Roman")
+renderer.put_text("fonts/ETBookW-Roman.otf", "Modified Roman")
 renderer.add_separator()
 
-renderer.put_text("source/ETBembo-RomanLF.otf", "Original RomanLF")
-renderer.put_text("fonts/ETBookW-RomanLF.otf", "Modified RomanLF")
+renderer.put_text("source/ETBookOT-Italic.otf", "Original Italic")
+renderer.put_text("fonts/ETBookW-Italic.otf", "Modified Italic")
 renderer.add_separator()
 
-renderer.put_text("source/ETBembo-DisplayItalic.otf", "Original RomanDisplayItalic")
-renderer.put_text("fonts/ETBookW-DisplayItalic.otf", "Modified RomanDisplayItalic")
-renderer.add_separator()
-
-renderer.put_text("source/ETBembo-SemiBoldOSF.otf", "Original SemiBoldOSF")
-renderer.put_text("fonts/ETBookW-SemiBoldOSF.otf", "Modified SemiBoldOSF")
+renderer.put_text("source/ETBookOT-Bold.otf", "Original Bold")
+renderer.put_text("fonts/ETBookW-Bold.otf", "Modified Bold")
 
 renderer.save()
