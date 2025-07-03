@@ -1,19 +1,42 @@
 feature kern {
-    pos W o -115;
-    pos W a -115;
-	pos W e -115;
-	pos W y -135;
+	pos A V -135;
+	pos A W -135;
+	pos A Y -90;
+	pos A v -50;
+	pos A y -50;
+
+	pos K O -25;
+	pos K a -25;
+	pos K e -25;
+	pos K o -25;
+	pos K y -35;
+
+	pos O W -55;
+
+	pos P A -60;
+	pos P a -50;
+	pos P e -50;
+	pos P o -50;
+	pos P y -10;
+
+	pos V A -90;
+	pos V O -20;
+	pos V a -90;
+	pos V e -90;
+	pos V o -90;
+	pos V y -90;
+
 	pos W A -120;
 	pos W O -55;
-	pos A V -135;
-	pos A v -50;
-	pos A Y -90;
-	pos V A -90;
-	pos V a -90;
-	pos V o -90;
-	pos Y a -120;
-	pos Y o -120;
-	pos Y e -120;
+	pos W a -115;
+	pos W e -115;
+	pos W o -115;
+	pos W y -135;
+
 	pos Y A -45;
-	pos O W -55;
+	pos Y O -45;
+	pos Y a -120;
+	pos Y e -120;
+	pos Y o -120;
+	pos Y y -120;
 } kern;

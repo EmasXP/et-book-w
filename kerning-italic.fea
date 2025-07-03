@@ -1,16 +1,28 @@
 feature kern {
-    pos W o -75;
-    pos W a -75;
-	pos W e -75;
-	pos W A -70;
-	pos W y -20;
 	pos A Y -35;
 	pos A v -15;
+	pos A y -15;
+
+	pos P A -40;
+	pos P a -30;
+	pos P e -30;
+	pos P o -30;
+
 	pos V A -60;
 	pos V a -75;
+	pos V e -75;
 	pos V o -70;
-	pos Y A -15;
+
+	pos W A -70;
+	pos W a -75;
+	pos W e -75;
+    pos W o -75;
+	pos W y -20;
+
+	pos Y A -55;
+	pos Y O -55;
 	pos Y a -65;
-	pos Y o -65;
 	pos Y e -65;
+	pos Y o -65;
+	pos Y y -45;
 } kern;
