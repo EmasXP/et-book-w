@@ -1,42 +1,81 @@
+# https://github.com/adobe-type-tools/agl-aglfn/blob/master/glyphlist.txt
+
 feature kern {
-	pos A V -135;
-	pos A W -135;
-	pos A Y -90;
-	pos A v -50;
-	pos A y -50;
+	pos A T -95;
+	pos A V -170;
+	pos A W -170;
+	pos A Y -150;
+	pos A v -85;
+	pos A y -85;
 
-	pos K O -25;
-	pos K a -25;
-	pos K e -25;
-	pos K o -25;
-	pos K y -35;
+	pos K O -35;
+	pos K V -60;
+	pos K W -60;
+	pos K a -20;
+	pos K e -20;
+	pos K o -20;
+	pos K v -45;
+	pos K w -35;
+	pos K y -45;
+	pos K adieresis -20; # K ä
+	pos K aring -20; # K å
+	pos K ae -20; # K æ
+	pos K odieresis -20; # K ö
+	pos K oslash -45; # K ø
 
-	pos O W -55;
+	pos M y -30;
 
-	pos P A -60;
+	pos N y -30;
+
+	pos O T -25;
+	pos O V -75;
+	pos O W -75;
+	pos O y -30;
+
+	pos P A -85;
 	pos P a -50;
 	pos P e -50;
 	pos P o -50;
-	pos P y -10;
+	pos P y -25;
+	pos P adieresis -50; # P ä
+	pos P aring -50; # P å
+	pos P ae -50; # P æ
+	pos P odieresis -50; # P ö
+	pos P oslash -65; # P ø
 
-	pos V A -90;
-	pos V O -20;
-	pos V a -90;
-	pos V e -90;
-	pos V o -90;
-	pos V y -90;
+	pos V A -110;
+	pos V O -40;
+	pos V a -85;
+	pos V e -85;
+	pos V o -85;
+	pos V y -110;
+	pos V adieresis -85; # V ä
+	pos V aring -85; # V å
+	pos V ae -85; # V æ
+	pos V odieresis -85; # V ö
+	pos V oslash -100; # V ø
 
-	pos W A -120;
-	pos W O -55;
-	pos W a -115;
-	pos W e -115;
-	pos W o -115;
-	pos W y -135;
+	pos W A -150;
+	pos W O -80;
+	pos W a -125;
+	pos W e -125;
+	pos W o -125;
+	pos W y -160;
+	pos W adieresis -125; # W ä
+	pos W aring -100; # W å
+	pos W ae -135; # W æ
+	pos W odieresis -125; # W ö
+	pos W oslash -150; # W ø
 
-	pos Y A -45;
-	pos Y O -45;
-	pos Y a -120;
-	pos Y e -120;
-	pos Y o -120;
-	pos Y y -120;
+	pos Y A -90;
+	pos Y O -80;
+	pos Y a -140;
+	pos Y e -140;
+	pos Y o -140;
+	pos Y y -150;
+	pos Y adieresis -125; # Y ä
+	pos Y aring -85; # Y å
+	pos Y ae -150; # Y æ
+	pos Y odieresis -140; # Y ö
+	pos Y oslash -160; # Y ø
 } kern;
