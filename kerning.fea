@@ -81,15 +81,15 @@ feature kern {
 	pos W odieresis -125; # W ö
 	pos W oslash -150; # W ø
 
-	pos Y A -90;
-	pos Y O -80;
-	pos Y a -140;
-	pos Y e -140;
-	pos Y o -140;
-	pos Y y -150;
-	pos Y adieresis -125; # Y ä
-	pos Y aring -85; # Y å
-	pos Y ae -150; # Y æ
-	pos Y odieresis -140; # Y ö
-	pos Y oslash -160; # Y ø
+	pos Y A -55;
+	pos Y O -50;
+	pos Y a -110;
+	pos Y e -110;
+	pos Y o -110;
+	pos Y y -115;
+	pos Y adieresis -110; # Y ä
+	pos Y aring -110; # Y å
+	pos Y ae -115; # Y æ
+	pos Y odieresis -110; # Y ö
+	pos Y oslash -125; # Y ø
 } kern;
