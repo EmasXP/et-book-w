@@ -43,6 +43,20 @@ feature kern {
 	pos P odieresis -50; # P ö
 	pos P oslash -65; # P ø
 
+	pos T A -65;
+	pos T O -22;
+	pos T a -87;
+	pos T e -94;
+	pos T o -87;
+	pos T v -108;
+	pos T w -95;
+	pos T y -108;
+	pos T adieresis -87; # T ä
+	pos T aring -87; # T å
+	pos T ae -87; # T æ
+	pos T odieresis -87; # T ö
+	pos T oslash -108; # T ø
+
 	pos V A -110;
 	pos V O -40;
 	pos V a -85;
